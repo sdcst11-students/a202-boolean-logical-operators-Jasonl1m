@@ -30,3 +30,17 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+import math
+a = int(input("Enter a integer = "))
+b = int(input("Enter a integer = "))
+c = int(input("Enter a integer = "))
+if a == (b**2 + c**2)**0.5:
+    print(f"{a}, {b}, {c} form a Pythagorean triple")
+elif b == (a**2 + c**2)**0.5:
+    print(f"{a}, {b}, {c} form a Pythagorean triple")
+elif c == (a**2 + b**2)**0.5:
+    print(f"{a}, {b}, {c} form a Pythagorean triple")
+else:
+    print(f"{a}, {b}, {c} do not form a Pythagorean triple")
+
+

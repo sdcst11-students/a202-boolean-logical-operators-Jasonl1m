@@ -24,3 +24,10 @@ Enter a number: 5
 Enter a number: 4.0
 4.0 is a positive integer
 """
+
+x = float(input("Enter a number = ")) 
+if x % 1 > 0 or x <= 0:
+    print(f"{x} is not a positive integer")
+else:
+    print(f"{int(x)} is a positive integer")
+
